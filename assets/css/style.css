@@ -16,7 +16,15 @@ body {
 	padding: 0;
 	background: black;
 }
-
+p {
+	color: white;
+}
+.image-main {
+	max-height: 500px;
+	width: 100%;
+	height: 60%;
+	
+}
 .image {
 	width: 100%;
 	height: 80%;

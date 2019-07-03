@@ -1,24 +1,24 @@
 #map {
 	height: 100%;
 }
-.box {
-    width: 100%;
-}
+
 .row {
 	margin: 0 auto;
 }
-.bg-image {
-	margin: 0 auto;
-	position: absolute;
+h2,h3 {
+	color: white;
 }
+
 html,
 body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	background: black;
 }
 .image {
 	width: 100%;
+	height: 100%;
 }
 #description {
 	font-family: Roboto;

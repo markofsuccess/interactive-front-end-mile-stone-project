@@ -8,21 +8,26 @@ function initAutocomplete() {
         mapTypeId: 'roadmap'
     });
     
-// Add Marker
+//  Marker Stockholm
 
     var marker = new google.maps.Marker({
     position:{lat: 59.334591,lng: 18.063240},
     map:map,
-    icon: 'assets/images/sweden.png'
+    icon: 'assets/images/sweden.png',
+    animation: google.maps.Animation.DROP
     });
+    
 
     var infoWindow = new google.maps.InfoWindow({
     content: '<h1>Stockholm</h1>' 
     });
-    
+// Add Marker Function
+
     marker.addListener('click', function(){
         infoWindow.open(map, marker);
     });
+    
+// Searchbox
 
     var input = document.getElementById('pac-input');
     var searchBox = new google.maps.places.SearchBox(input);
@@ -32,6 +37,8 @@ function initAutocomplete() {
     map.addListener('bounds_changed', function() {
         searchBox.setBounds(map.getBounds());
     });
+    
+// Markers
 
     var markers = [];
 

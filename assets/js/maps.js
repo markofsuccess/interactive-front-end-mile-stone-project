@@ -12,7 +12,8 @@ function initAutocomplete() {
 
     var marker = new google.maps.Marker({
     position:{lat: 59.334591,lng: 18.063240},
-    map:map 
+    map:map,
+    icon: 'assets/images/sweden.png'
     });
 
     var infoWindow = new google.maps.InfoWindow({

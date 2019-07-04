@@ -1,12 +1,18 @@
 function initAutocomplete() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {
-            lat: -33.8688,
-            lng: 151.2195
+            lat: 59.334591,
+            lng: 18.063240
         },
         zoom: 3,
         mapTypeId: 'roadmap'
     });
+    
+    var marker = new google.maps.Marker({
+    position:{lat: 59.334591,lng: 18.063240},
+    map:map 
+    });
+
 
 
     var input = document.getElementById('pac-input');

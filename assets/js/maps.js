@@ -8,12 +8,20 @@ function initAutocomplete() {
         mapTypeId: 'roadmap'
     });
     
+// Add Marker
+
     var marker = new google.maps.Marker({
     position:{lat: 59.334591,lng: 18.063240},
     map:map 
     });
 
-
+    var infoWindow = new google.maps.InfoWindow({
+    content: '<h1>Stockholm</h1>' 
+    });
+    
+    marker.addListener('click', function(){
+        infoWindow.open(map, marker);
+    });
 
     var input = document.getElementById('pac-input');
     var searchBox = new google.maps.places.SearchBox(input);

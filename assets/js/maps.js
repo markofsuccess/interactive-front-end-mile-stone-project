@@ -86,4 +86,34 @@ function initAutocomplete() {
         });
         map.fitBounds(bounds);
     });
+
+    
+// Country markers
+$('#row').on('click', function(){
+    
+    $('#kenya').on('click', function(){
+    new google.maps.Marker({
+    position:{lat: -4.036878,lng: 39.669571},
+    map:map,
+    
+    animation: google.maps.Animation.DROP
+    });
+   $('#chile').on('click', function(){
+      new google.maps.Marker({
+    position:{lat: -37.721037,lng: -72.2093771 },
+    map:map,
+    
+    animation: google.maps.Animation.DROP
+    }); 
+     $('#hongkong').on('click', function(){
+      new google.maps.Marker({
+    position:{lat: 22.286394,lng: 114.149139 },
+    map:map,
+    
+    animation: google.maps.Animation.DROP
+    }); 
+})
+});
+});
+});
 }

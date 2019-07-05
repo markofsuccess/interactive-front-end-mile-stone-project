@@ -1,25 +1,24 @@
 function initAutocomplete() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {
-            lat: 59.334591,
-            lng: 18.063240
+            lat: 52.520008,
+            lng: 13.404954
         },
-        zoom: 3,
+        zoom: 2,
         mapTypeId: 'roadmap'
     });
     
-//  Marker Stockholm
+//  Marker Germany
 
     var marker = new google.maps.Marker({
-    position:{lat: 59.334591,lng: 18.063240},
+    position:{lat: 52.520008,lng: 13.404954},
     map:map,
-    icon: 'assets/images/sweden.png',
     animation: google.maps.Animation.DROP
     });
     
 
     var infoWindow = new google.maps.InfoWindow({
-    content: '<h1>Stockholm</h1>' 
+    content: '<h1>Germany</h1><p class="text-dark">Capital: Berlin <br> Population: 82,79 million</p>' 
     });
 // Add Marker Function
 
@@ -95,25 +94,24 @@ $('#row').on('click', function(){
     new google.maps.Marker({
     position:{lat: -4.036878,lng: 39.669571},
     map:map,
-    
     animation: google.maps.Animation.DROP
+    });
     });
    $('#chile').on('click', function(){
       new google.maps.Marker({
     position:{lat: -37.721037,lng: -72.2093771 },
     map:map,
-    
     animation: google.maps.Animation.DROP
     }); 
+   });
      $('#hongkong').on('click', function(){
       new google.maps.Marker({
     position:{lat: 22.286394,lng: 114.149139 },
     map:map,
-    
     animation: google.maps.Animation.DROP
     }); 
-})
-});
 });
 });
 }
+
+

@@ -4,11 +4,12 @@ function initAutocomplete() {
             lat: 52.520008,
             lng: 13.404954
         },
-        zoom: 2,
+        zoom: 3,
+        mapTypeControl: false,
         mapTypeId: 'roadmap'
     });
-    
-//  Marker Germany
+
+        //  Marker Germany
 
     var marker = new google.maps.Marker({
     position:{lat: 52.520008,lng: 13.404954},
@@ -25,7 +26,8 @@ function initAutocomplete() {
     marker.addListener('click', function(){
         infoWindow.open(map, marker);
     });
-    
+        
+
 // Searchbox
 
     var input = document.getElementById('pac-input');
@@ -113,5 +115,3 @@ $('#row').on('click', function(){
 });
 });
 }
-
-

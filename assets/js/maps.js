@@ -9,37 +9,21 @@ function initAutocomplete() {
         mapTypeId: 'roadmap'
     });
 
-        //  Marker Germany
 
-    var marker = new google.maps.Marker({
-    position:{lat: 52.520008,lng: 13.404954},
-    map:map,
-    animation: google.maps.Animation.DROP
-    });
-    
 
-    var infoWindow = new google.maps.InfoWindow({
-    content: '<h1>Germany</h1><p class="text-dark">Capital: Berlin <br> Population: 82,79 million</p>' 
-    });
-// Add Marker Function
 
-    marker.addListener('click', function(){
-        infoWindow.open(map, marker);
-    });
-        
-
-// Searchbox
+    // Searchbox
 
     var input = document.getElementById('pac-input');
     var searchBox = new google.maps.places.SearchBox(input);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
 
     map.addListener('bounds_changed', function() {
         searchBox.setBounds(map.getBounds());
     });
-    
-// Markers
+
+    // Markers
 
     var markers = [];
 
@@ -88,30 +72,40 @@ function initAutocomplete() {
         map.fitBounds(bounds);
     });
 
-    
-// Country markers
-$('#row').on('click', function(){
-    
-    $('#kenya').on('click', function(){
-    new google.maps.Marker({
-    position:{lat: -4.036878,lng: 39.669571},
-    map:map,
-    animation: google.maps.Animation.DROP
+
+    // Country markers
+    $('#row').on('click', function() {
+
+        $('#kenya').on('click', function() {
+            new google.maps.Marker({
+                position: {
+                    lat: -4.036878,
+                    lng: 39.669571
+                },
+                map: map,
+                animation: google.maps.Animation.DROP
+            });
+        });
+
+        $('#chile').on('click', function() {
+            new google.maps.Marker({
+                position: {
+                    lat: -37.721037,
+                    lng: -72.2093771
+                },
+                map: map,
+                animation: google.maps.Animation.DROP
+            });
+        });
+        $('#hongkong').on('click', function() {
+            new google.maps.Marker({
+                position: {
+                    lat: 22.286394,
+                    lng: 114.149139
+                },
+                map: map,
+                animation: google.maps.Animation.DROP
+            });
+        });
     });
-    });
-   $('#chile').on('click', function(){
-      new google.maps.Marker({
-    position:{lat: -37.721037,lng: -72.2093771 },
-    map:map,
-    animation: google.maps.Animation.DROP
-    }); 
-   });
-     $('#hongkong').on('click', function(){
-      new google.maps.Marker({
-    position:{lat: 22.286394,lng: 114.149139 },
-    map:map,
-    animation: google.maps.Animation.DROP
-    }); 
-});
-});
 }

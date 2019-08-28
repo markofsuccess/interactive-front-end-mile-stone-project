@@ -2,48 +2,61 @@
 <html lang="en-US">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("user_hQy09SUinD6v2biafE2GJ");
+    })();
+</script>
+    
     <title>Search Your Holiday Dream Destination</title>
 </head>
 <body>
     <header>
         <section class="bg-white container-fluid">
             <nav class="navbar">
-                <div>
-                <h1 class="text-black">Search For Your Dream Holiday Destination</h1>
-                <p class="text-black">Select a destination city and search for tourist attractions, accommodation, bars and restaurants</p>
+                <div class="col-xs-12">
+                    <h1 class="text-black">Search For Your Dream Holiday Destination</h1>
+                    <p class="text-black">Select a destination city and search for tourist attractions, accommodation, bars and restaurants</p>
                 </div>
                 <button class="open-button" onclick="openForm()"><i class="envelope fa fa-envelope-o"></i></button>
+                <div class="form-popup" id="myForm">
+                    <form class="form-container" onsubmit="return sendEmail(this);" method:"POST">
+                        <h1>Contact me. Let's work together!</h1>
+                        <label for="emailaddress"><b>Email address</b></label>
+                        <input type="email" name="emailaddress" id="emailaddress" placeholder="Email" required>
 
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Contact me. Let's work together!</h1>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="projectsummary"><b>Message</b></label>
-    <input type="name" placeholder="Project Description" "name" required>
-    <button type="submit" class="btn">Submit</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-    </section>
-            </nav>
+                        <label for="projectsummary"><b>Message</b></label>
+                        <input type="text" id="projectsummary" placeholder="Project Description" required>
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
         </section>
-
+        </nav>
+        </section>
     </header>
     <input id="pac-input" class="controls" type="text" placeholder="Search Your Dream Holiday Destination">
     <div id="map" class="xs-6">
     </div>
-    <div class="col"><h2 class="text-center">Top 3 Destinations 2019</h2><p class="text-center text-white" >Press on any of the 3 countries to find out the location on the map</p></div>
+    <div class="col top3">
+        <h2 class="text-center">Top 3 Destinations 2019</h2>
+        <p class="text-center text-white">Press on any of the 3 countries to find out the location on the map</p>
+    </div>
     <div id="row" class="row">
-      <div id="kenya" class="col-md-4 col-sm-4 col-xs-4"><h3 class="text-center">Kenya</h3><img class="image" src="assets/images/kenya.jpg" alt="kenya"></div>
-      <div id="chile" class="col-md-4 col-sm-4 col-xs-4"><h3 class="text-center">Chile</h3><img class="image" src="assets/images/chile.jpg" alt="chile"></div>
-      <div id="hongkong" class="col-md-4 col-sm-4 col-xs-4"><h3 class="text-center">Hong Kong</h3><img class="image" src="assets/images/hongkong.jpg" alt="hongkong"></div>
+        <div id="kenya" class="col-md-4 col-sm-4 col-xs-4">
+            <h3 class="text-center">Kenya</h3><img class="image" src="assets/images/kenya.jpg" alt="kenya"></div>
+        <div id="chile" class="col-md-4 col-sm-4 col-xs-4">
+            <h3 class="text-center">Chile</h3><img class="image" src="assets/images/chile.jpg" alt="chile"></div>
+        <div id="hongkong" class="col-md-4 col-sm-4 col-xs-4">
+            <h3 class="text-center">Hong Kong</h3><img class="image" src="assets/images/hongkong.jpg" alt="hongkong"></div>
     </div>
     <footer class="bg-white container-fluid footer">
         <div class="row">
@@ -57,10 +70,9 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/email.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-NyhAbjic7Vjx_TNkMKEEjFe2rSeDxs&libraries=places&callback=initAutocomplete" async defer></script>
-  
 </body>
 </html>

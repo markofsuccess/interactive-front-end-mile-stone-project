@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+<!-- General -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,31 +16,38 @@
 
 <body>
     <header>
-        <section class="bg-white container-fluid">
+
+        <section class="bg-black container-fluid">
             <nav class="navbar">
                 <div class="col-xs-12">
-                    <h1 class="text-black">Search For Your Dream Holiday Destination</h1>
-                    <p class="text-black">Select a destination city and search for tourist attractions, accommodation, bars and restaurants</p>
+                    <h1 class="text-white">Search For Your Dream Holiday Destination</h1>
+                    <p class="text-white">Select a destination city and search for tourist attractions, accommodation, bars and restaurants<br>Choose Map Style in The Menu to The
+                    Left</p>
                 </div>
-                <div id="style-selector-control" class="map-control">
-                    <select id="style-selector" class="selector-control">
-                        <option value="default">Default</option>
-                        <option value="silver">Silver</option>
-                        <option value="night">Night mode</option>
-                        <option value="retro" selected="selected">Retro</option>
-                        <option value="hiding">Hide features</option>
-                    </select>
-                </div>
-
+                <input id="pac-input" class="controls" type="text" placeholder="Search Your Dream Holiday Destination">
             </nav>
         </section>
 
     </header>
 
-    <input id="pac-input" class="controls" type="text" placeholder="Search Your Dream Holiday Destination">
+    <!-- Map -->
+    
     <div id="map" class="xs-6">
     </div>
 
+    <!-- Map Style Selector -->
+
+    <div id="style-selector-control" class="map-control">
+        <select id="style-selector" class="selector-control">
+            <option value="default">Default</option>
+            <option value="silver">Silver</option>
+            <option value="night">Night mode</option>
+            <option value="retro" selected="selected">Retro</option>
+            <option value="hiding">Hide features</option>
+        </select>
+    </div>
+
+    <!-- Top 3 Destinations -->
     <div class="col top3">
         <h2 class="text-center">Top 3 Destinations 2019</h2>
         <p class="text-center text-white">Press on any of the 3 countries to find out the location on the map</p>
@@ -51,6 +60,8 @@
         <div id="hongkong" class="col-md-4 col-sm-4 col-xs-4">
             <h3 class="text-center">Hong Kong</h3><img class="image" src="assets/images/hongkong.jpg" alt="hongkong"></div>
     </div>
+
+    <!-- Footer -->
     <footer class="bg-white container-fluid footer">
         <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-4">

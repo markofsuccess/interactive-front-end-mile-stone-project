@@ -14,7 +14,7 @@ function initAutocomplete() {
 
     var input = document.getElementById('pac-input');
     var searchBox = new google.maps.places.SearchBox(input);
-    map.controls.push(input);
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
 
     map.addListener('bounds_changed', function() {

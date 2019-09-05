@@ -29,7 +29,7 @@
                 <button class="open-button" onclick="openForm()"><i class="envelope fa fa-envelope-o"></i></button>
                 <div class="form-popup" id="myForm">
                     <form class="form-container" onsubmit="return sendEmail(this);" method:"POST">
-                        <h1>Contact me. Let's work together!</h1>
+                        <h1>Got a project in mind? Contact me bellow!</h1>
                         <label for="emailaddress"><b>Email address</b></label>
                         <input type="email" name="emailaddress" id="emailaddress" placeholder="Email" required>
 
@@ -43,9 +43,20 @@
         </nav>
         </section>
     </header>
+    <div id="style-selector-control"  class="map-control">
+      <select id="style-selector" class="selector-control">
+        <option value="default">Default</option>
+        <option value="silver">Silver</option>
+        <option value="night">Night mode</option>
+        <option value="retro" selected="selected">Retro</option>
+        <option value="hiding">Hide features</option>
+      </select>
+    </div>
+ 
     <input id="pac-input" class="controls" type="text" placeholder="Search Your Dream Holiday Destination">
     <div id="map" class="xs-6">
     </div>
+
     <div class="col top3">
         <h2 class="text-center">Top 3 Destinations 2019</h2>
         <p class="text-center text-white">Press on any of the 3 countries to find out the location on the map</p>

@@ -10,7 +10,9 @@
 h2,h3 {
 	color: white;
 }
-
+#row {
+	margin-bottom: 15px;
+}
 html,
 body {
 	height: 100%;

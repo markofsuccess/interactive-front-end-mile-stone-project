@@ -14,7 +14,7 @@ function initAutocomplete() {
 
     var input = document.getElementById('pac-input');
     var searchBox = new google.maps.places.SearchBox(input);
-    map.controls[google.maps.ControlPosition].push(input);
+    map.controls.push(input);
 
 
     map.addListener('bounds_changed', function() {
@@ -111,7 +111,7 @@ function initAutocomplete() {
    
 // Add a style-selector control to the map.
         var styleControl = document.getElementById('style-selector-control');
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
+        map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(styleControl);
 
         // Set the map's style to the initial value of the selector.
         var styleSelector = document.getElementById('style-selector');

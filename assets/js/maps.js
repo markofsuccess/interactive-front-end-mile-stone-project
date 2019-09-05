@@ -14,7 +14,7 @@ function initAutocomplete() {
 
     var input = document.getElementById('pac-input');
     var searchBox = new google.maps.places.SearchBox(input);
-    map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
+    map.controls[google.maps.ControlPosition].push(input);
 
 
     map.addListener('bounds_changed', function() {
@@ -108,6 +108,7 @@ function initAutocomplete() {
             
         });
     });
+   
 // Add a style-selector control to the map.
         var styleControl = document.getElementById('style-selector-control');
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
@@ -416,4 +417,4 @@ function initAutocomplete() {
             stylers: [{visibility: 'off'}]
           }
         ]
-      };
+      }; 

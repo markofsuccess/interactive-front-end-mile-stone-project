@@ -8,16 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function(){
-      emailjs.init("user_hQy09SUinD6v2biafE2GJ");
-    })();
-</script>
-    
+
     <title>Search Your Holiday Dream Destination</title>
 </head>
+
 <body>
     <header>
         <section class="bg-white container-fluid">
@@ -26,33 +20,21 @@
                     <h1 class="text-black">Search For Your Dream Holiday Destination</h1>
                     <p class="text-black">Select a destination city and search for tourist attractions, accommodation, bars and restaurants</p>
                 </div>
-                <button class="open-button" onclick="openForm()"><i class="envelope fa fa-envelope-o"></i></button>
-                <div class="form-popup" id="myForm">
-                    <form class="form-container" onsubmit="return sendEmail(this);" method:"POST">
-                        <h1>Got a project in mind? Contact me bellow!</h1>
-                        <label for="emailaddress"><b>Email address</b></label>
-                        <input type="email" name="emailaddress" id="emailaddress" placeholder="Email" required>
-
-                        <label for="projectsummary"><b>Message</b></label>
-                        <input type="text" id="projectsummary" placeholder="Project Description" required>
-                        <button type="submit" class="btn">Submit</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                    </form>
+                <div id="style-selector-control" class="map-control">
+                    <select id="style-selector" class="selector-control">
+                        <option value="default">Default</option>
+                        <option value="silver">Silver</option>
+                        <option value="night">Night mode</option>
+                        <option value="retro" selected="selected">Retro</option>
+                        <option value="hiding">Hide features</option>
+                    </select>
                 </div>
+
+            </nav>
         </section>
-        </nav>
-        </section>
+
     </header>
-    <div id="style-selector-control"  class="map-control">
-      <select id="style-selector" class="selector-control">
-        <option value="default">Default</option>
-        <option value="silver">Silver</option>
-        <option value="night">Night mode</option>
-        <option value="retro" selected="selected">Retro</option>
-        <option value="hiding">Hide features</option>
-      </select>
-    </div>
- 
+
     <input id="pac-input" class="controls" type="text" placeholder="Search Your Dream Holiday Destination">
     <div id="map" class="xs-6">
     </div>
@@ -83,7 +65,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="assets/js/maps.js"></script>
-    <script src="assets/js/email.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-NyhAbjic7Vjx_TNkMKEEjFe2rSeDxs&libraries=places&callback=initAutocomplete" async defer></script>
 </body>
+
 </html>

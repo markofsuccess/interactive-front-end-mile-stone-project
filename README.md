@@ -34,31 +34,31 @@ The technologies used in this project were:
 
 * [HTML 5] (https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
-* [CSS3] (https://developer.mozilla.org/en-US/docs/Archive/CSS3)
+* [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3)
 
-* [Bootstrap] (https://getbootstrap.com/)
-..* Boostrap was used mainly to make website responsive on multiple devices using bootstrap grid.
+* [Bootstrap](https://getbootstrap.com/)
+  * Boostrap was used mainly to make website responsive on multiple devices using bootstrap grid.
 
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-..* JavaScript language is being used to execute different functions of Google maps API.
+  * JavaScript language is being used to execute different functions of Google maps API.
 
-* [Google Maps & Places API] (https://cloud.google.com/maps-platform/)
-..* Google maps and places api are being used to display a world map on the screen with locations and markers.
+* [Google Maps & Places API](https://cloud.google.com/maps-platform/)
+  * Google maps and places api are being used to display a world map on the screen with locations and markers.
 
-* [AWS Cloud 9] (https://aws.amazon.com/education/awseducate/)
-..* Amazon Cloud 9 IDE was used to develop the project.
+* [AWS Cloud 9](https://aws.amazon.com/education/awseducate/)
+  * Amazon Cloud 9 IDE was used to develop the project.
 
-* [Github] (https://github.com/)
-..* Github was used to document the project progress and to host the website.
+* [Github](https://github.com/)
+  * Github was used to document the project progress and to host the website.
 
-* [jQuery] (https://jquery.com/)
-..* The project uses JQuery to simplify DOM manipulation.
+* [jQuery](https://jquery.com/)
+  * The project uses JQuery to simplify DOM manipulation.
 
-* [HTML & CSS Validator] (https://validator.w3.org/)
-..* This was used to validate the HTML and CSS code.
+* [HTML & CSS Validator](https://validator.w3.org/)
+  * This was used to validate the HTML and CSS code.
 
-* [JavaScript Formatter] (https://beautifier.io/)
-..* This was used to format the JavaScript code.
+* [JavaScript Formatter](https://beautifier.io/)
+  * This was used to format the JavaScript code.
 
 ## Testing
 
@@ -87,10 +87,10 @@ The technologies used in this project were:
 3. Using Ubuntu terminal in Cloud 9 and with command git init a local repository was created.
 4. In Cloud 9 terminal command git push origin master in order to push it to the Github resporitory.
 5. Deploy site to Github Pages.
-..* Step 1: Go to my repository in Github
-..* Step 2: Click on settings
-..* Step 3: Scroll down and choose select master branch from dropdown
-..* Step 4: Save and page done automatically 
+  * Step 1: Go to my repository in Github
+  * Step 2: Click on settings
+  * Step 3: Scroll down and choose select master branch from dropdown
+  * Step 4: Save and page done automatically 
 
 ## Credits
 

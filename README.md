@@ -12,7 +12,7 @@ The website is for individuals who want to explore the world map and see what at
 
 ## Mockup
 
-Please find paper and pen mockup for the original design here.
+[Please find paper and pen mockup for the original design here](https://github.com/markofsuccess/interactive-front-end-mile-stone-project/blob/master/assets/images/mockup.jpeg)
 
 ## Features
 

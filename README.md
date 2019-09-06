@@ -32,7 +32,7 @@ Please find paper and pen mockup for the original design here.
 
 The technologies used in this project were:
 
-* [HTML 5] (https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+* [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
 * [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3)
 
@@ -86,7 +86,7 @@ The technologies used in this project were:
 2. Creating a repository on Github
 3. Using Ubuntu terminal in Cloud 9 and with command git init a local repository was created.
 4. In Cloud 9 terminal command git push origin master in order to push it to the Github resporitory.
-5. Deploy site to Github Pages.
+5. Deploy site to Github Pages:
   * Step 1: Go to my repository in Github
   * Step 2: Click on settings
   * Step 3: Scroll down and choose select master branch from dropdown

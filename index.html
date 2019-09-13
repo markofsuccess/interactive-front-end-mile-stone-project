@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <!-- General -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,32 +8,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
-
     <title>Search Your Holiday Dream Destination</title>
 </head>
-
 <body>
     <header>
-
         <section class="bg-black container-fluid">
             <nav class="navbar">
                 <div class="col-xs-12">
                     <h1 class="text-white">Search For Your Dream Holiday Destination</h1>
-                    <p class="text-white">1. Use the search bar on top center of the map to search for a destination city and then search for tourist attractions, accommodation, bars and restaurants<br>2. Choose your preffered map style in the menu on the bottom center of the map</p>
+                    <p class="text-white">1. Use the search bar on top center of the map to search for a destination city and then search for tourist attractions, accommodation, bars and restaurants<br>2. Choose your preffered map style in the drop-down menu on the bottom center of the map</p>
                 </div>
                 <input id="pac-input" class="controls" type="text" placeholder="Search Your Dream Holiday Destination">
             </nav>
         </section>
-
     </header>
-
     <!-- Map -->
-    
     <div id="map" class="xs-6">
     </div>
-
     <!-- Map Style Selector -->
-
     <div id="style-selector-control" class="map-control">
         <select id="style-selector" class="selector-control">
             <option value="default">Default</option>
@@ -45,21 +35,19 @@
             <option value="hiding">Hide features</option>
         </select>
     </div>
-
     <!-- Top 3 Destinations -->
     <div class="col top3">
         <h2 class="text-center">Top 3 Destinations 2019</h2>
-        <p class="text-center text-white">Press on any of the 3 countries to find out the location on the map</p>
+        <p class="text-center text-white">Click on the country headlines below for more info on each country & click the images to find out location on the world map</p>
     </div>
     <div id="row" class="row">
         <div id="kenya" class="col-md-4 col-sm-4 col-xs-4">
-            <h3 class="text-center">Kenya</h3><img class="image" src="assets/images/kenya.jpg" alt="kenya"></div>
+            <a href="https://magicalkenya.com/" target="_blank"><h3 class="text-center">Kenya</h3></a><img class="image" src="assets/images/kenya.jpg" alt="kenya"></div>
         <div id="chile" class="col-md-4 col-sm-4 col-xs-4">
-            <h3 class="text-center">Chile</h3><img class="image" src="assets/images/chile.jpg" alt="chile"></div>
+            <a href="https://chile.travel/en" target="_blank"><h3 class="text-center">Chile</h3></a><img class="image" src="assets/images/chile.jpg" alt="chile"></div>
         <div id="hongkong" class="col-md-4 col-sm-4 col-xs-4">
-            <h3 class="text-center">Hong Kong</h3><img class="image" src="assets/images/hongkong.jpg" alt="hongkong"></div>
+            <a href="http://www.discoverhongkong.com/eng/index.jsp" target="_blank"><h3 class="text-center">Hong Kong</h3></a><img class="image" src="assets/images/hongkong.jpg" alt="hongkong"></div>
     </div>
-
     <!-- Footer -->
     <footer class="bg-white container-fluid footer">
         <div class="row">
@@ -73,9 +61,9 @@
             </div>
         </div>
     </footer>
+    <!-- Script Files -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="assets/js/maps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-NyhAbjic7Vjx_TNkMKEEjFe2rSeDxs&libraries=places&callback=initAutocomplete" async defer></script>
 </body>
-
 </html>

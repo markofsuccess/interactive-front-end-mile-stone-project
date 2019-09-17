@@ -4,7 +4,7 @@ This is a single web page application where users can search for countries, citi
 
 ## UX
 
-The website is for individuals who want to explore the world map and see what attractions & destinations in the world they might want to visit. They can easily do it trough just using the search bar in the map to search for whatever destinations or attractions they would like to visit, and the map will zoom in to whatever destination/attraction they search for.¨
+The website is for individuals who want to explore the world map and see what attractions & destinations in the world they might want to visit. They can easily do it trough just using the search bar in the map to search for whatever destinations or attractions they would like to visit, and the map will zoom in to whatever destination/attraction they search for.
 
 * As a user, I want to perform a seach on the map for a destination I'm intrested in visiting,
 * As a user, I might want to play around with different themes on the map and choose on that appeals me the most.
@@ -92,8 +92,15 @@ The technologies used in this project were:
   * Step 3: Scroll down and choose select master branch from dropdown
   * Step 4: Save and page done automatically 
 
-## Credits
+### Credits
 
-## Media
+## Content
 
-## Acknowledgements
+* JS code for Map Styles was from [Google Maps Styles Selection Documentation](https://developers.google.com/maps/documentation/javascript/examples/style-selector)
+* Lot of the Google Maps JS code was from [Google Maps Documentation](https://developers.google.com/maps/documentation/javascript/examples/)
+* Dialog Box was created with help by [jQuery Documentation](https://jqueryui.com/dialog/#default)
+* Top 3 Destinations were made up by me.
+
+
+
+

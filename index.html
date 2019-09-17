@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- General -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +10,17 @@
     <title>Search Your Holiday Dream Destination</title>
 </head>
 <body>
-    <header>
+        <!-- Navbar -->
         <section class="bg-black container-fluid">
-            <nav class="navbar">
+            <nav class="navbar navbar-default">
                 <div class="col-xs-12">
-                    <h1 class="text-white">Search For Your Dream Holiday Destination</h1>
-                    <p class="text-white">1. Use the search bar on top center of the map to search for a destination city and then search for tourist attractions, accommodation, bars and restaurants<br>2. Choose your preffered map style in the drop-down menu on the bottom center of the map</p>
+                    <a class="navbar-brand" href="#">Holiday Dream Destinations</a>
+                    <button id="info-btn" class="btn"><i class="fa fa-question-circle"></i></button>
                 </div>
-                <input id="pac-input" class="controls" type="text" placeholder="Search Your Dream Holiday Destination">
             </nav>
         </section>
-    </header>
     <!-- Map -->
+    <input id="pac-input" class="controls" type="text" placeholder="Search Your Dream Holiday Destination">
     <div id="map" class="xs-6">
     </div>
     <!-- Map Style Selector -->

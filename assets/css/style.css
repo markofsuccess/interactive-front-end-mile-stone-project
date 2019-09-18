@@ -139,3 +139,9 @@ table {
 .iw_table_icon {
   text-align: right;
 }
+/*--------------------------------------------Media Responsivness*/
+@media screen and (max-width: 425px) {
+  .info-content {
+    width: 99%;
+  }
+}

@@ -7,70 +7,106 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Search Your Holiday Dream Destination</title>
+    <title>Holiday Dream Destination</title>
 </head>
 <body>
-        <!-- Navbar -->
-        <section class="bg-black container-fluid">
-            <nav class="navbar navbar-default">
-                <div class="col-xs-12">
-                    <a class="navbar-brand" href="#">Holiday Dream Destinations</a>
-                    <button id="info-btn" class="btn"><i class="fa fa-question-circle"></i></button>
-                </div>
-            </nav>
-        </section>
-                <!-- Info-box -->
-    <div id="info-dialog" class="dialog">
-        <div class="info-content">
-            <p>1. This application is intended for users to search for a destination using the search bar on the top center of Google maps and then search for tourist attractions, accommodation, bars and restaurants<br>2. Choose your preffered map style in the drop-down menu on the bottom center of the map</p>
+    <!-- Searchbar -->
+    <div class="searchbar col-md-6">
+        <div class="hotel-search"></div>
+        <div id="findhotels">
+            Find Places in:
+        </div>
+        <div id="locationField">
+            <input id="autocomplete" placeholder="Enter a city" type="text" />
+        </div>
+        <div id="controls">
+            <select id="country">
+                <option value="all">All</option>
+                <option value="au">Australia</option>
+                <option value="br">Brazil</option>
+                <option value="ca">Canada</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="mx">Mexico</option>
+                <option value="nz">New Zealand</option>
+                <option value="it">Italy</option>
+                <option value="za">South Africa</option>
+                <option value="es">Spain</option>
+                <option value="pt">Portugal</option>
+                <option value="us" selected>U.S.A.</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+        </div>
+        <div id="search">
+            <div class="markers">
+                <label class="radio" for="lodging">Hotels
+                    <input onchange="search('lodging')" type="radio" id="loging" name="option" checked="checked" />
+                    <span class="selected"></span>
+                </label>
+                <label class="radio" for="restaurant">Restaurants
+                    <input onchange="search('restaurant')" type="radio" id="restaurant" name="option" />
+                    <span class="selected"></span>
+                </label>
+                <label class="radio" for="shopping_mall">Shopping
+                    <input onchange="search('shopping_mall')" type="radio" id="shopping_mall" name="option" />
+                    <span class="selected"></span>
+                </label>
+                <label class="radio" for="spa">Spa
+                    <input onchange="search('spa')" type="radio" id="spa" name="option" />
+                    <span class="selected"></span>
+                </label>
+                <label class="radio" for="art_gallery">Art Gallery
+                    <input onchange="search('art_gallery')" type="radio" id="art_gallery" name="option" />
+                    <span class="selected"></span>
+                </label>
+                <label class="radio" for="train_station">Train Stations
+                    <input onchange="search('train_station')" type="radio" id="train_station" name="option" />
+                    <span class="selected"></span>
+                </label>
+            </div>
         </div>
     </div>
     <!-- Map -->
-    <input id="pac-input" class="controls" type="text" placeholder="Search Your Dream Holiday Destination">
-    <div id="map" class="xs-6">
-    </div>
-    <!-- Map Style Selector -->
-    <div id="style-selector-control" class="map-control">
-        <select id="style-selector" class="selector-control">
-            <option value="default">Default</option>
-            <option value="silver">Silver</option>
-            <option value="night">Night mode</option>
-            <option value="red">Red Water</option>
-            <option value="purple">Purple Water</option>
-            <option value="retro" selected="selected">Retro</option>
-            <option value="hiding">Hide features</option>
-        </select>
-    </div>
-    <!-- Top 3 Destinations -->
-    <div class="col top3">
-        <h2 class="text-center">Top 3 Destinations 2019</h2>
-        <p class="text-center text-white">Click on the country headlines below for more info on each country & click the images to find out location on the world map</p>
-    </div>
-    <div id="row" class="row">
-        <div id="kenya" class="col-md-4 col-sm-4 col-xs-4">
-            <a href="https://magicalkenya.com/" target="_blank"><h3 class="text-center">Kenya</h3></a><img class="image" src="assets/images/kenya.jpg" alt="kenya"></div>
-        <div id="chile" class="col-md-4 col-sm-4 col-xs-4">
-            <a href="https://chile.travel/en" target="_blank"><h3 class="text-center">Chile</h3></a><img class="image" src="assets/images/chile.jpg" alt="chile"></div>
-        <div id="hongkong" class="col-md-4 col-sm-4 col-xs-4">
-            <a href="http://www.discoverhongkong.com/eng/index.jsp" target="_blank"><h3 class="text-center">Hong Kong</h3></a><img class="image" src="assets/images/hongkong.jpg" alt="hongkong"></div>
-    </div>
-    <!-- Footer -->
-    <footer class="bg-white container-fluid footer">
-        <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a target="_blank" href="https://github.com/markofsuccess"><i class="fa fa-github" style="color:purple;"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/markus-turesson-sjöman-095506115"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-            </div>
+    <div id="selection" class="container-fluid"></div>
+    <div class="row"></div>
+    <div class="col-md-12" id="map-area">
+        <div id="map" style="height:100%">
         </div>
-    </footer>
-    <!-- Script Files -->
+    </div>
+    <div id="listing">
+        <table id="resultsTable">
+            <tbody id="results"></tbody>
+        </table>
+    </div>
+    <div style="display: none">
+        <div id="info-content">
+            <table>
+                <tr id="iw-url-row" class="iw_table_row">
+                    <td id="iw-icon" class="iw_table_icon"></td>
+                    <td id="iw-url"></td>
+                </tr>
+                <tr id="iw-address-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Address:</td>
+                    <td id="iw-address"></td>
+                </tr>
+                <tr id="iw-phone-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Telephone:</td>
+                    <td id="iw-phone"></td>
+                </tr>
+                <tr id="iw-rating-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Rating:</td>
+                    <td id="iw-rating"></td>
+                </tr>
+                <tr id="iw-website-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Website:</td>
+                    <td id="iw-website"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- JS and Google Maps API Script-->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="assets/js/maps.js"></script>
-    <script src="assets/js/infobox.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-NyhAbjic7Vjx_TNkMKEEjFe2rSeDxs&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-NyhAbjic7Vjx_TNkMKEEjFe2rSeDxs&libraries=places&callback=initMap" async defer></script>
 </body>
 </html>

@@ -3,8 +3,13 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0 !important;
-  background: #F8F8F8;
+  background: 	#F5F5F5;
   font-family: times;
+}
+body {
+  background-image: url("assets/images/beach.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 /*--------------------------------------------Map Size*/
 #map {
@@ -53,7 +58,7 @@ navbar {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .info-content {
-  background-color: white;
+  background-color: #F0F8FF;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;

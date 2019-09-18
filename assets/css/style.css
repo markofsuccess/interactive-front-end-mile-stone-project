@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0 !important;
   background: #F8F8F8;
+  font-family: times;
 }
 /*--------------------------------------------Map Size*/
 #map {

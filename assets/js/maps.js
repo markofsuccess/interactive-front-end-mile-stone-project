@@ -66,7 +66,7 @@ var map, places, infoWindow;
          center: countries['us'].center,
          mapTypeControl: false,
          panControl: false,
-         zoomControl: false,
+         zoomControl: true,
          streetViewControl: false
      });
 
@@ -271,3 +271,4 @@ var map, places, infoWindow;
          document.getElementById('iw-website-row').style.display = 'none';
      }
  }
+ 

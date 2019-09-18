@@ -1,181 +1,96 @@
 /*--------------------------------------------General*/
-#map {
-	height: 70%;
-}
-
-.row {
-	margin: 0 auto;
-}
-h2,h3 {
-	color: white;
-}
-#row {
-	margin-bottom: 10px;
-}
-html,
-body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background: black;
-}
-.image {
-	width: 100%;
-	height: 80%;
-}
-
-/*--------------------------------------------Navbar*/
-navbar {
-	margin-bottom: 0;
-	z-index: 1;
-}
-.btn {
-  border: none;
-  background-color: inherit;
-}
-.fa-question-circle
-{
-	font-size: 40px;
-	color: white;
-}
-/*--------------------------------------------Info-Box*/
-.dialog {
-  display: none;
-  position: fixed;
-  z-index: 2;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
+html, body {
   height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0;
+  padding: 0 !important;
+  background: #F8F8F8;
 }
-.info-content {
-  background-color: #F2FDFF;
+/*--------------------------------------------Map Size*/
+#map {
+    height: 100%;
+    min-height: 415px;
+    margin-top: 10px;
+}
+
+#map-area {
+    width: auto;
+}
+/*--------------------------------------------Searchbar*/
+.searchbar {
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 15px;
-  width: 400px;
 }
-
-/*--------------------------------------------Map*/
-#description {
-	font-family: Roboto;
-	font-size: 15px;
-	font-weight: 300;
+/*--------------------------------------------Search Results*/
+table {
+  font-size: 12px;
 }
-#infowindow-content .title {
-	font-weight: bold;
+.hotel-search {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 440px;
+  z-index: 1;
 }
-
-#infowindow-content {
-	display: none;
+#listing {
+  position: absolute;
+  width: 300px;
+  height: 470px;
+  overflow: auto;
+  left: 0;
+  top: 695px;
+  cursor: pointer;
+  overflow-x: hidden;
 }
-
-#map #infowindow-content {
-	display: inline;
+#findhotels {
+  font-size: 14px;
 }
-.pac-card {
-	margin: 10px 10px 0 0;
-	border-radius: 2px 0 0 2px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	outline: none;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-	background-color: #fff;
-	font-family: Roboto;
+#locationField {
+  -webkit-box-flex: 1 1 190px;
+  -ms-flex: 1 1 190px;
+  flex: 1 1 190px;
+  margin: 0 2px;
 }
-
-#pac-container {
-	padding-bottom: 12px;
-	margin-right: 12px;
+#controls {
+  -webkit-box-flex: 1 1 240px;
+  -ms-flex: 1 1 140px;
+  flex:  1 140px;
 }
-
-.pac-controls {
-	display: inline-block;
-	padding: 5px 11px;
+#autocomplete {
+  width: 100%;
 }
-
-.pac-controls label {
-	font-family: Roboto;
-	font-size: 13px;
-	font-weight: 300;
+#country {
+  width: 100%;
 }
-
-#pac-input {
-	background-color: #fff;
-	font-family: Roboto;
-	font-size: 15px;
-	font-weight: 300;
-	margin-left: 2px;
-	padding: 0 11px 0 13px;
-	text-overflow: ellipsis;
-	width: 300px;
-	height: 40px;
-	margin-top: 5px;
+.placeIcon {
+  width: 20px;
+  height: 34px;
+  margin: 4px;
 }
-
-#pac-input:focus {
-	border-color: #4d90fe;
+.hotelIcon {
+  width: 24px;
+  height: 24px;
 }
-
-#title {
-	color: #fff;
-	background-color: #4d90fe;
-	font-size: 25px;
-	font-weight: 500;
-	padding: 6px 12px;
+#resultsTable {
+  border-collapse: collapse;
+  width: 240px;
 }
-
-#target {
-	width: 345px;
+#rating {
+  font-size: 13px;
+  font-family: Arial Unicode MS;
 }
-
-/*--------------------------------------------Top 3 Destinations Content*/
-@media screen and (max-width: 425px) {
-  .info-content {
-    width: 99%;
-  }
+.iw_table_row {
+  height: 18px;
 }
-
-.top3 {
-  margin-top: 10px;
+.iw_attribute_name {
+  font-weight: bold;
+  text-align: right;
 }
-
-/*--------------------------------------------Footer*/
-
-footer a {
-    font-size: 42px;
-}
-footer ul {
-	text-align: center;
-}
-/*--------------------------------------------Map Styles*/
-      .map-control {
-        background-color: #fff;
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-        font-family: 'Roboto','sans-serif';
-        margin: 10px;
-        /* Hide the control initially, to prevent it from appearing
-           before the map loads. */
-        display: none;
-      }
-      /* Display the control once it is inside the map. */
-      #map .map-control { display: block; }
-
-      .selector-control {
-        font-size: 14px;
-        line-height: 30px;
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-/*--------------------------------------------Media Responsivness*/
-@media screen and (max-width: 425px) {
-  .info-content {
-    width: 99%;
-  }
+.iw_table_icon {
+  text-align: right;
 }

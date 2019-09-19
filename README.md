@@ -1,14 +1,14 @@
 # Dream Holiday Destinations
 
-This is a single web page application where users can search for countries, cities, restaurants, tourist attractions, accomodation and much more with the search bar on google maps. Have also put in 3 top destinations for 2019 which the user can click on to find out the location for them. The map is viewable in 4 different modes: Default mode, Silver, Nightmode and Retro, the map is runned using google maps & places API.   
+My second mile-stone project for my school [Code Institute](https://codeinstitute.net/)
+This is a simple single web page application where users can search for countries, cities, restaurants, tourist attractions, accomodation and much more with the search bar above google maps. Its very easy to use for anyone, just click in where you want to travel, then click what local restaurants, hotels, shopping, art galleries, spa's and train stations are located. A table of results will show under the map showing each marker on the map which is one, when pressing on any of the markes either on the map or in the results table, info for that specific attraction will show.   
 
 ## UX
 
-The website is for individuals who want to explore the world map and see what attractions & destinations in the world they might want to visit. They can easily do it trough just using the search bar in the map to search for whatever destinations or attractions they would like to visit, and the map will zoom in to whatever destination/attraction they search for.
+The website is for individuals who want to explore the world map and see what attractions & destinations in the world they might want to visit. They can easily do it trough just using the search bar just above the map to search for whatever destinations or attractions they would like to visit, and the map will zoom in to whatever destination they search for.
 
-* As a user, I want to perform a seach on the map for a destination I'm intrested in visiting,
-* As a user, I might want to play around with different themes on the map and choose on that appeals me the most.
-* As a user, I might like some inspiration on trendy destinations by clicking on the top 3 destinations of 2019.
+* As a user, I want to perform a seach on the map for a destination I'm intrested in visiting.
+* As a user, I want to see what local attratcions there are, like restaurants, shopping, art galleries, spa and train stations.
 
 ## Mockup
 
@@ -19,13 +19,14 @@ The website is for individuals who want to explore the world map and see what at
 ### Existing Features
 
 * The user can search for destinations or attractions using the Google maps and places api code.
-* The user can use Google maps styling selector to choose 4 different color themes for the map: Default, Silver, Night Mode and Retro.
-* The user can press on any of the 3 top destinations to find out their location on the map.
+* The user can see results for restaurants, hotels, shopping, art galleries, spa and train stations with the Place Autocomplete Hotel Search JavaScript code.
+
 
 ### Features Left to Implement
 
 * Email JS or other email contact form on the site.
-* When pressing on any of the top 3 destinatons markers on the map to show info, images for the countries and to zoom in on the location.
+* Adding map style selector to the map so users can choose what map style they prefer.
+* 
 
 
 ## Technologies Used
@@ -69,16 +70,15 @@ The technologies used in this project were:
 * Brave Version 0.61.52 Chromium: 73.0.3683.86
 * Safari Version 12.1.2 (14607.3.9)
 * The site was tested on multiple devices using Google chrome developer tools to see the responsivness for different media devices. The devices that were tested were: Samsung S5, iPhone X, iPhone 5/6/7/8, iPhone 6/7/8 Plus, iPad and iPad Pro.
-* JavaScript code was tested manually by using the searchbar in the map to see if results were returning as should. Test were successful. Google chrome developer tools console was tested to see any error in JavaScript code, and console.log() for different functions from the code was tested.
-
-### User Stories
-
-* The 3 Top destinations Kenya, Chile and Honkong were tested by clicking on both the headline and picture to show the location on the map. Tests were successful.
+* JavaScript code was tested manually by using the google map searchbar to see if results were returning as should. Test were successful. Google chrome developer tools console was tested to see any error in JavaScript code, and console.log() for different functions from the code was tested.
 
 ### Social Meda icons
 
-* The Github and LinkedIn icons in the footer section were tested if opened up another page with their sites. Tests were successful.
+* The Github and LinkedIn icons in the navbar section were tested if opened up another page with their sites. Tests were successful.
 
+### Dialog Box
+
+* The infobox was tested on all devices, on mobile devices the infobox was to big so added mediq queries for small devices and after that its showing succesfully on all devices.
 
 ## Deployment
 
@@ -92,15 +92,9 @@ The technologies used in this project were:
   * Step 3: Scroll down and choose select master branch from dropdown
   * Step 4: Save and page done automatically 
 
-### Credits
+## Credits
 
-## Content
-
-* JS code for Map Styles was from [Google Maps Styles Selection Documentation](https://developers.google.com/maps/documentation/javascript/examples/style-selector)
-* Lot of the Google Maps JS code was from [Google Maps Documentation](https://developers.google.com/maps/documentation/javascript/examples/)
+### Content
+* Thanks to the [Google Maps JavaScript API Documentation](https://developers.google.com/maps/documentation/javascript/tutorial) for lot of the JS code with some adjustments.
+* JS code for Autocomplete Search was from [Google Maps Places Autocomplete Hotel Search Documentation](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
 * Dialog Box was created with help by [jQuery Documentation](https://jqueryui.com/dialog/#default)
-* Top 3 Destinations were made up by me.
-
-
-
-

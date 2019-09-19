@@ -65,7 +65,7 @@ navbar {
 }
 /*--------------------------------------------Search Results*/
 table {
-  font-size: 12px;
+  font-size: 14px;
 }
 .hotel-search {
   -webkit-box-align: center;
@@ -86,8 +86,8 @@ table {
   width: 300px;
   height: 470px;
   overflow: auto;
-  left: 0;
-  top: 695px;
+  left: 40%;
+  top: 670px;
   cursor: pointer;
   overflow-x: hidden;
 }
@@ -142,5 +142,12 @@ table {
 @media screen and (max-width: 425px) {
   .info-content {
     width: 99%;
+  }
+}
+@media screen and (max-width: 425px) {
+  #listing {
+    width: 50%;
+    top: 760px;
+    left: 27%;
   }
 }

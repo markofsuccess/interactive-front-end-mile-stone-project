@@ -1,7 +1,7 @@
 # Dream Holiday Destinations
 
 My second mile-stone project for my school [Code Institute](https://codeinstitute.net/)
-This is a simple single web page application where users can search for countries, cities, restaurants, tourist attractions, accomodation and much more with the search bar above google maps. Its very easy to use for anyone, just click in where you want to travel, then click what local restaurants, hotels, shopping, art galleries, spa's and train stations are located. A table of results will show under the map showing each marker on the map which is one, when pressing on any of the markes either on the map or in the results table, info for that specific attraction will show.   
+This is a simple single web page application where users can search where they want to travel and explore different cities and local restaurants, tourist attractions, accomodation and transport with the search bar above google maps. Its very easy to use for anyone, just choose a country and search for city where you want to travel, then click what local restaurants, hotels, shopping, art galleries, spa's and train stations are located. A table of results will show under the map showing each marker on the map where it is located, when pressing on any of the markes either on the map or in the results table, info for that specific attraction will show. The site is quite simple, its a project I worked long on and in the last phase of the project I decided to test a new design with some old features from before, the main difference was intemplenting more of the Google Place Autocomplete Search in order to make the site more interactive and useful for the users. Now they can really explore any city in the world and see results of many local activites in a clear way. I added a question mark icon when clicked, showing a infobox explaining what the site is about, also added social media link icon for my Github and LinkedIn sites hence if anyone would like to get in contact me.   
 
 ## UX
 
@@ -18,16 +18,16 @@ The website is for individuals who want to explore the world map and see what at
 
 ### Existing Features
 
-* The user can search for destinations or attractions using the Google maps and places api code.
-* The user can see results for restaurants, hotels, shopping, art galleries, spa and train stations with the Place Autocomplete Hotel Search JavaScript code.
-
+* The user can press on the question mark icon next to the navbar title to find out what the site is about.
+* When user search for any destination, it will zoom in on their search and returning whatever attraction they chosen to see.
+* The user can see local results for restaurants, hotels, shopping, art galleries, spa and train stations for their chosen destination.
+* The user can press on any of the result markers both on the map and in the resultstable to find out info about the attraction/establishment.
+* The results list for different activities is shown with a table under the map.
 
 ### Features Left to Implement
 
 * Email JS or other email contact form on the site.
 * Adding map style selector to the map so users can choose what map style they prefer.
-* 
-
 
 ## Technologies Used
 
@@ -38,7 +38,7 @@ The technologies used in this project were:
 * [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3)
 
 * [Bootstrap](https://getbootstrap.com/)
-  * Boostrap was used mainly to make website responsive on multiple devices using bootstrap grid.
+  * Boostrap was used mainly to make different divs on the website responsive on multiple devices using bootstrap grid.
 
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   * JavaScript language is being used to execute different functions of Google maps API.

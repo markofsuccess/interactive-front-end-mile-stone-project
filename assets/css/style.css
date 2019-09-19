@@ -4,7 +4,7 @@ html, body {
   margin: 0;
   padding: 0 !important;
   background: #F0FCF9;
-  font-family: times;
+  font-family: montserrat;
 }
 /*--------------------------------------------Map Size*/
 #map {
@@ -12,7 +12,6 @@ html, body {
     min-height: 415px;
     margin-top: 10px;
 }
-
 #map-area {
     width: auto;
 }
@@ -37,7 +36,7 @@ navbar {
 }
 .navbar-default .navbar-brand {
     color: black;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 /*--------------------------------------------Info-Box*/
@@ -154,7 +153,7 @@ table {
 @media screen and (max-width: 425px) {
   #listing {
     width: 50%;
-    top: 800px;
+    top: 830px;
     left: 27%;
   }
 }

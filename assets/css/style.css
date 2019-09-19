@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0 !important;
-  background: 	#F0F8FF;
+  background: #F0FCF9;
   font-family: times;
 }
 /*--------------------------------------------Map Size*/
@@ -32,8 +32,12 @@ navbar {
 }
 .fa-question-circle
 {
-	font-size: 40px;
-	color: blue;
+	font-size: 35px;
+	color: black;
+}
+.navbar-default .navbar-brand {
+    color: black;
+    font-size: 22px;
 }
 
 /*--------------------------------------------Info-Box*/
@@ -62,6 +66,9 @@ navbar {
 .searchbar {
   margin: auto;
   font-size: 20px;
+}
+.travel {
+  font-size: 25px;
 }
 /*--------------------------------------------Search Results*/
 table {
@@ -147,7 +154,14 @@ table {
 @media screen and (max-width: 425px) {
   #listing {
     width: 50%;
-    top: 760px;
+    top: 800px;
     left: 27%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #listing {
+    width: 50%;
+    top: 700px;
+    left: 40%;
   }
 }

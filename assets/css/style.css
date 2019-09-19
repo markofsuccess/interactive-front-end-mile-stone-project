@@ -3,13 +3,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0 !important;
-  background: 	#F5F5F5;
+  background: 	#F0F8FF;
   font-family: times;
-}
-body {
-  background-image: url("assets/images/beach.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
 }
 /*--------------------------------------------Map Size*/
 #map {
@@ -23,9 +18,9 @@ body {
 }
 /*--------------------------------------------Navbar*/
 navbar {
-	margin-bottom: 0;
 	z-index: 1;
 	width: 100%;
+	margin: 0;
 }
 .list-inline {
   font-size: 32px;
@@ -38,11 +33,9 @@ navbar {
 .fa-question-circle
 {
 	font-size: 40px;
-	color: white;
+	color: blue;
 }
-.navbar {
-  background: black;
-}
+
 /*--------------------------------------------Info-Box*/
 .dialog {
   display: none;
@@ -68,6 +61,7 @@ navbar {
 /*--------------------------------------------Searchbar*/
 .searchbar {
   margin: auto;
+  font-size: 20px;
 }
 /*--------------------------------------------Search Results*/
 table {

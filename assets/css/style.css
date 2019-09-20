@@ -6,6 +6,9 @@ html, body {
   background: #F0FCF9;
   font-family: montserrat;
 }
+h3 {
+  font-size: 20px;
+}
 /*--------------------------------------------Map Size*/
 #map {
     height: 100%;
@@ -68,10 +71,12 @@ navbar {
   margin: auto;
   font-size: 20px;
   width: 80%;
+  font-family: 'Montserrat Light';
 
 }
 .travel {
   font-size: 25px;
+  font-family: 'Montserrat';
 }
 /*--------------------------------------------Search Results*/
 table {
@@ -90,6 +95,7 @@ table {
   top: 0;
   width: 440px;
   z-index: 1;
+  
 }
 #listing {
   position: absolute;
@@ -160,14 +166,14 @@ table {
 @media screen and (max-width: 425px) {
   #listing {
     width: 50%;
-    top: 830px;
+    top: 855px;
     left: 27%;
   }
 }
 @media screen and (min-width: 768px) {
   #listing {
     width: 50%;
-    top: 720px;
+    top: 700px;
     left: 40%;
   }
 }

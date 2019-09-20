@@ -7,6 +7,7 @@ html, body {
   font-family: montserrat;
   background-image: url('../images/beach.jpg');
   background-position: center;
+  
 }
 h3 {
   font-size: 20px;
@@ -108,6 +109,7 @@ table {
   top: 670px;
   cursor: pointer;
   overflow-x: hidden;
+  margin-bottom: 10px;
 }
 #findhotels {
   font-size: 14px;
@@ -175,7 +177,7 @@ table {
 @media screen and (min-width: 768px) {
   #listing {
     width: 50%;
-    top: 740px;
+    top: 730px;
     left: 40%;
   }
 }

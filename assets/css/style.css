@@ -11,9 +11,11 @@ html, body {
     height: 100%;
     min-height: 415px;
     margin-top: 10px;
+    border: 1px solid #888;
 }
 #map-area {
     width: auto;
+    
 }
 /*--------------------------------------------Navbar*/
 navbar {
@@ -65,6 +67,7 @@ navbar {
 .searchbar {
   margin: auto;
   font-size: 20px;
+
 }
 .travel {
   font-size: 25px;

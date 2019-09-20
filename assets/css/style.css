@@ -5,6 +5,8 @@ html, body {
   padding: 0 !important;
   background: #F0FCF9;
   font-family: montserrat;
+  background-image: url('../images/beach.jpg');
+  background-position: center;
 }
 h3 {
   font-size: 20px;

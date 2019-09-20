@@ -1,183 +1,237 @@
 /*--------------------------------------------General*/
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0 !important;
-  background: #F0FCF9;
-  font-family: montserrat;
-  background-image: url('../images/beach.jpg');
-  background-position: center;
-  
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0 !important;
+	background: #F0FCF9;
+	font-family: montserrat;
+	background-image: url('../images/beach.jpg');
+	background-position: center;
 }
+
 h3 {
-  font-size: 20px;
+	font-size: 25px;
 }
+
+.box {
+	background: white;
+	width: 15%;
+	margin: auto;
+	margin-top: 10px;
+}
+
 /*--------------------------------------------Map Size*/
+
 #map {
-    height: 100%;
-    min-height: 415px;
-    margin-top: 10px;
-    border: 1px solid #888;
+	height: 100%;
+	min-height: 415px;
+	margin-top: 10px;
+	border: 1px solid #888;
 }
+
 #map-area {
-    width: auto;
-    
+	width: auto;
 }
+
 /*--------------------------------------------Navbar*/
+
+.navbar {
+	border-bottom: 1px solid #000;
+}
+
 navbar {
 	z-index: 1;
 	width: 100%;
 	margin: 0;
 }
+
 .list-inline {
-  font-size: 32px;
-  text-align: right;
+	font-size: 32px;
+	text-align: right;
 }
+
 .btn {
-  border: none;
-  background-color: inherit;
+	border: none;
+	background-color: inherit;
 }
-.fa-question-circle
-{
+
+.fa-question-circle {
 	font-size: 35px;
 	color: black;
 }
+
 .navbar-default .navbar-brand {
-    color: black;
-    font-size: 18px;
+	color: black;
+	font-size: 18px;
 }
+
 
 /*--------------------------------------------Info-Box*/
-.dialog {
-  display: none;
-  position: fixed;
-  z-index: 2;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.info-content {
-  background-color: #F0F8FF;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 15px;
-  width: 400px;
-}
-/*--------------------------------------------Searchbar*/
-.searchbar {
-  margin: auto;
-  font-size: 20px;
-  width: 80%;
-  font-family: 'Montserrat Light';
 
+.dialog {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
 }
+
+.info-content {
+	background-color: #F0F8FF;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	border-radius: 15px;
+	width: 400px;
+}
+
+
+/*--------------------------------------------Searchbar*/
+
+.searchbar {
+	margin: auto;
+	font-size: 20px;
+	width: 80%;
+	font-family: 'Montserrat Light';
+}
+
 .travel {
-  font-size: 25px;
-  font-family: 'Montserrat';
+	font-size: 25px;
+	font-family: 'Montserrat';
+	margin-top: 75px;
 }
+
+
 /*--------------------------------------------Search Results*/
+
 table {
-  font-size: 14px;
+	font-size: 14px;
 }
+
 .hotel-search {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 440px;
-  z-index: 1;
-  
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 440px;
+	z-index: 1;
 }
+
 #listing {
-  position: absolute;
-  width: 300px;
-  height: 470px;
-  overflow: auto;
-  left: 40%;
-  top: 670px;
-  cursor: pointer;
-  overflow-x: hidden;
-  margin-bottom: 10px;
+	position: absolute;
+	width: 300px;
+	height: 470px;
+	overflow: auto;
+	left: 40%;
+	top: 670px;
+	cursor: pointer;
+	overflow-x: hidden;
+	margin-bottom: 10px;
 }
+
 #findhotels {
-  font-size: 14px;
+	font-size: 14px;
 }
+
 #locationField {
-  -webkit-box-flex: 1 1 190px;
-  -ms-flex: 1 1 190px;
-  flex: 1 1 190px;
-  margin: 0 2px;
-  border: 1px solid black;
-  margin-bottom: 5px;
+	-webkit-box-flex: 1 1 190px;
+	-ms-flex: 1 1 190px;
+	flex: 1 1 190px;
+	margin: 0 2px;
+	border: 1px solid black;
+	margin-bottom: 5px;
 }
+
 #controls {
-  -webkit-box-flex: 1 1 240px;
-  -ms-flex: 1 1 140px;
-  flex:  1 140px;
-  border: 1px solid black;
+	-webkit-box-flex: 1 1 240px;
+	-ms-flex: 1 1 140px;
+	flex: 1 140px;
+	border: 1px solid black;
 }
+
 #autocomplete {
-  width: 100%;
+	width: 100%;
 }
+
 #country {
-  width: 100%;
+	width: 100%;
 }
+
 .placeIcon {
-  width: 20px;
-  height: 34px;
-  margin: 4px;
+	width: 20px;
+	height: 34px;
+	margin: 4px;
 }
+
 .hotelIcon {
-  width: 24px;
-  height: 24px;
+	width: 24px;
+	height: 24px;
 }
+
 #resultsTable {
-  border-collapse: collapse;
-  width: 240px;
+	border-collapse: collapse;
+	width: 240px;
 }
+
 #rating {
-  font-size: 13px;
-  font-family: Arial Unicode MS;
+	font-size: 13px;
+	font-family: Arial Unicode MS;
 }
+
 .iw_table_row {
-  height: 18px;
+	height: 18px;
 }
+
 .iw_attribute_name {
-  font-weight: bold;
-  text-align: right;
+	font-weight: bold;
+	text-align: right;
 }
+
 .iw_table_icon {
-  text-align: right;
+	text-align: right;
 }
+
+
 /*--------------------------------------------Media Responsivness*/
+
 @media screen and (max-width: 425px) {
-  .info-content {
-    width: 99%;
-  }
+	.info-content {
+		width: 99%;
+	}
 }
+
 @media screen and (max-width: 425px) {
-  #listing {
-    width: 50%;
-    top: 895px;
-    left: 27%;
-  }
+	#listing {
+		width: 50%;
+		top: 1005px;
+		left: 27%;
+	}
 }
+
 @media screen and (min-width: 768px) {
-  #listing {
-    width: 50%;
-    top: 730px;
-    left: 40%;
-  }
+	#listing {
+		width: 50%;
+		top: 830px;
+		left: 40%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.box {
+		width: 30%;
+	}
 }

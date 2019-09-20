@@ -108,11 +108,14 @@ table {
   -ms-flex: 1 1 190px;
   flex: 1 1 190px;
   margin: 0 2px;
+  border: 1px solid blue;
+  margin-bottom: 5px;
 }
 #controls {
   -webkit-box-flex: 1 1 240px;
   -ms-flex: 1 1 140px;
   flex:  1 140px;
+  border: 1px solid black;
 }
 #autocomplete {
   width: 100%;
@@ -163,7 +166,7 @@ table {
 @media screen and (min-width: 768px) {
   #listing {
     width: 50%;
-    top: 700px;
+    top: 720px;
     left: 40%;
   }
 }

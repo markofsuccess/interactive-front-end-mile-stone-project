@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,11 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:light' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Holiday Dream Destination</title>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="bg-light navbar navbar-default">
@@ -26,12 +27,13 @@
             </ul>
         </div>
     </nav>
-     <!-- Info-box -->
-        <div id="info-dialog" class="dialog">
-            <div class="info-content">
-                <p class="text-black">This application is intended for users to search for any destination they want and explore the local attractions, accomodations, shopping, restaurants, train stations etc by searching for a city anywhere in the world or choose some popular countries from the drop-down menu.</p>
-            </div>
+    <!-- Info-box -->
+    <div id="info-dialog" class="dialog">
+        <div class="info-content">
+            <p class="text-black">This application is intended for users to search for any destination they want and explore the local attractions, accomodations, shopping, restaurants, train stations etc by searching for a city anywhere in the world or choose some popular
+                countries from the drop-down menu.</p>
         </div>
+    </div>
     <!-- Searchbar -->
     <div class="searchbar col-xs-12">
         <div class="hotel-search"></div>
@@ -39,7 +41,7 @@
             <p class="travel text-center">Where would you like to travel?</p>
         </div>
         <div id="locationField">
-            <input id="autocomplete" placeholder="Enter a city" type="text"/>
+            <input id="autocomplete" placeholder="Enter a city" type="text" />
         </div>
         <div id="controls">
             <select id="country">
@@ -111,7 +113,7 @@
         <div id="map" style="height:100%">
         </div>
     </div>
-    
+
     <!-- Table Results-->
     <div id="listing">
         <table id="resultsTable">
@@ -146,11 +148,12 @@
     </div>
     <!-- Results Box-->
     <div class="box">
-    <h3 class="text-center text-black">Results</h3>
-    </div>
+        <h3 class="text-center text-black">Results</h3>
     <!-- JS and Google Maps API Script-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/infobox.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC-NyhAbjic7Vjx_TNkMKEEjFe2rSeDxs&libraries=places&callback=initMap" async defer></script>
 </body>
+
 </html>

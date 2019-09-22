@@ -48,6 +48,8 @@ The website is for individuals who want to explore the world map and see what at
 * Adding map style selector to the map so users can choose what map style they prefer.
 * Changing the marker icons.
 * Change the table of results list to something more neat.
+* Use Google geolocation to locate to users destination instead of the US.
+* Fix the background image on mobile devices so it the whole image covers the whole site.
 
 ## Technologies Used
 
@@ -58,7 +60,7 @@ The technologies used in this project were:
 * [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3)
 
 * [Bootstrap](https://getbootstrap.com/)
-  * Boostrap was used mainly to make different divs on the website responsive on multiple devices using bootstrap grid.
+  * Boostrap was used mainly to make the website responsive on multiple devices using bootstrap grid.
 
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   * JavaScript language is being used to execute different functions of Google maps API.
@@ -84,17 +86,19 @@ The technologies used in this project were:
 * [JavaScript Formatter](https://beautifier.io/)
   * This was used to format the JavaScript code.
 
-## Testing
+# Testing
 
-### Broswers
+## Broswers
 
 * The website was tested on the Google Chrome browser, Safari, Firefox Quantum and Brave broswer to make sure that everything loaded smoothly and looked proper across different browsers. Test were succesful on all browsers, on Brave browser however the markers on the map dont show for some reason.
 * Google Chrome Version 76.0.3809.132
 * Brave Version 0.61.52 Chromium: 73.0.3683.86
 * Safari Version 12.1.2 (14607.3.9)
 * Firefox Quantum version 69.01
+* Samsung Internet Browser on Samsung Galaxy S10, Version 10.1.00.27
+* Chrome Broswer on Samsung Galaxy S10, version 77.0.3865.92
 
-### Responsivness
+## Responsivness
 
 * The site was tested on multiple devices using Google chrome developer tools to see the responsivness for different media devices. The devices that were tested were: Samsung S5, iPhone X, iPhone 5/6/7/8, iPhone 6/7/8 Plus, iPad and iPad Pro.
 
@@ -116,7 +120,8 @@ The technologies used in this project were:
 
 ### Bugs
 
-* The markers dont show on the map in the Brave Broswer.
+* The markers dont display on the map in the Brave Broswer.
+
 
 # Deployment
 
